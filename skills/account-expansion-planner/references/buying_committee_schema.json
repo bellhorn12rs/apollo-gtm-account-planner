@@ -1,0 +1,22 @@
+{
+  "buying_committee_roles": {
+    "economic_buyer": {
+      "title_keywords": ["VP", "Chief", "Head of", "Director"],
+      "department_keywords": ["RevOps", "Revenue Operations", "Finance", "Sales Operations", "Commercial"],
+      "meddpicc_role": "Economic Buyer",
+      "description": "Holds the budget, evaluates ROI, and gives final commercial sign-off."
+    },
+    "champion": {
+      "title_keywords": ["Head of", "Director", "Manager", "Lead"],
+      "department_keywords": ["Business Systems", "BizTech", "GTM Systems", "Sales Enablement"],
+      "meddpicc_role": "Champion",
+      "description": "Feels the operational pain daily and actively drives internal adoption."
+    },
+    "technical_evaluator": {
+      "title_keywords": ["Architect", "Engineer", "Developer", "Administrator", "Lead"],
+      "department_keywords": ["Salesforce", "CRM", "Enterprise Applications", "Software"],
+      "meddpicc_role": "Technical Evaluator",
+      "description": "Assesses technical feasibility, API integrations, and security compliance."
+    }
+  }
+}

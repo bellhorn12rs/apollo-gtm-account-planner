@@ -1,0 +1,18 @@
+[
+  {
+    "email": "c.hughes@stripe.com",
+    "first_name": "Claire",
+    "last_name": "Hughes",
+    "title": "Head of Business Systems",
+    "sfdc_contact_id": "0038W000021A1bQ",
+    "active_sequence": true
+  },
+  {
+    "email": "d.chen@stripe.com",
+    "first_name": "David",
+    "last_name": "Chen",
+    "title": "Sr. Staff Engineer",
+    "sfdc_contact_id": "0038W000021A1bR",
+    "active_sequence": false
+  }
+]
