@@ -6,7 +6,7 @@ import urllib.error
 
 APOLLO_API_KEY = os.environ.get("APOLLO_API_KEY")
 
-# Domain-specific fallback mock contacts generator
+# Domain-specific fallback mock contacts generator (Professional / Scrubbed)
 DOMAIN_MOCK_DATABASE = {
     "stripe.com": [
         {"id": "str_01", "first_name": "Claire", "last_name": "Hughes", "title": "Head of Business Systems", "email": "c.hughes@stripe.com"},
@@ -25,13 +25,13 @@ DOMAIN_MOCK_DATABASE = {
         {"id": "fig_02", "first_name": "Brandon", "last_name": "Lee", "title": "Salesforce Engineer", "email": "b.lee@figma.com"}
     ],
     "datadoghq.com": [
-        {"id": "dd_01", "first_name": "Rachel", "last_name": "Green", "title": "VP of Revenue Operations", "email": "r.green@datadoghq.com"},
-        {"id": "dd_02", "first_name": "Chris", "last_name": "Pratt", "title": "Director of Sales Operations", "email": "c.pratt@datadoghq.com"},
-        {"id": "dd_03", "first_name": "Sam", "last_name": "Altman", "title": "Lead Salesforce Administrator", "email": "s.altman@datadoghq.com"}
+        {"id": "dd_01", "first_name": "Rachel", "last_name": "Stevens", "title": "VP of Revenue Operations", "email": "r.green@datadoghq.com"},
+        {"id": "dd_02", "first_name": "Christopher", "last_name": "Davis", "title": "Director of Sales Operations", "email": "c.pratt@datadoghq.com"},
+        {"id": "dd_03", "first_name": "Samuel", "last_name": "Hayes", "title": "Lead Salesforce Administrator", "email": "s.altman@datadoghq.com"}
     ],
     "hubspot.com": [
-        {"id": "hs_01", "first_name": "Laura", "last_name": "Dern", "title": "Chief Revenue Officer", "email": "l.dern@hubspot.com"},
-        {"id": "hs_02", "first_name": "Michael", "last_name": "Scott", "title": "Head of Sales Enablement & Systems", "email": "m.scott@hubspot.com"}
+        {"id": "hs_01", "first_name": "Laura", "last_name": "Danforth", "title": "Chief Revenue Officer", "email": "l.danforth@hubspot.com"},
+        {"id": "hs_02", "first_name": "Michael", "last_name": "Stone", "title": "Head of Sales Enablement & Systems", "email": "m.stone@hubspot.com"}
     ]
 }
 
