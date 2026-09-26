@@ -25,9 +25,9 @@ DOMAIN_MOCK_DATABASE = {
         {"id": "fig_02", "first_name": "Brandon", "last_name": "Lee", "title": "Salesforce Engineer", "email": "b.lee@figma.com"}
     ],
     "datadoghq.com": [
-        {"id": "dd_01", "first_name": "Rachel", "last_name": "Stevens", "title": "VP of Revenue Operations", "email": "r.green@datadoghq.com"},
-        {"id": "dd_02", "first_name": "Christopher", "last_name": "Davis", "title": "Director of Sales Operations", "email": "c.pratt@datadoghq.com"},
-        {"id": "dd_03", "first_name": "Samuel", "last_name": "Hayes", "title": "Lead Salesforce Administrator", "email": "s.altman@datadoghq.com"}
+    {"apollo_id": "dd_01", "name": "Rachel Stevens", "title": "VP of Sales Operations", "email": "r.stevens@datadoghq.com", "icf_persona": "Economic Buyer"},
+    {"apollo_id": "dd_02", "name": "Christopher Davis", "title": "Director of Sales Engineering", "email": "c.davis@datadoghq.com", "icf_persona": "Technical Evaluator"},
+    {"apollo_id": "dd_03", "name": "Samuel Hayes", "title": "Senior Sales Development Rep", "email": "s.hayes@datadoghq.com", "icf_persona": "User/SDR"}
     ],
     "hubspot.com": [
         {"id": "hs_01", "first_name": "Laura", "last_name": "Danforth", "title": "Chief Revenue Officer", "email": "l.danforth@hubspot.com"},
@@ -129,8 +129,8 @@ def enrich_single_domain(domain, headers, existing_emails):
             }
         })
 
-    roles_found = list(roles_mapped)
-    roles_missing = list(all_possible_roles - roles_mapped)
+    roles_found = sorted(list(roles_mapped))
+    roles_missing = sorted(list(all_possible_roles - roles_mapped))
     coverage_score = f"{int((len(roles_found) / 3.0) * 100)}%"
 
     account_result = {

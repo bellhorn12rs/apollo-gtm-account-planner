@@ -11,9 +11,9 @@
     "buying_committee_summary": {
       "committee_coverage_score": "100%",
       "roles_found": [
-        "Technical Evaluator",
         "Champion",
-        "Economic Buyer"
+        "Economic Buyer",
+        "Technical Evaluator"
       ],
       "roles_missing_gaps": [],
       "status_risk": "FULLY MAPPED"
@@ -89,9 +89,9 @@
     "buying_committee_summary": {
       "committee_coverage_score": "100%",
       "roles_found": [
-        "Technical Evaluator",
+        "Champion",
         "Economic Buyer",
-        "Champion"
+        "Technical Evaluator"
       ],
       "roles_missing_gaps": [],
       "status_risk": "FULLY MAPPED"
@@ -145,8 +145,8 @@
     "buying_committee_summary": {
       "committee_coverage_score": "66%",
       "roles_found": [
-        "Technical Evaluator",
-        "Champion"
+        "Champion",
+        "Technical Evaluator"
       ],
       "roles_missing_gaps": [
         "Economic Buyer"
@@ -189,46 +189,46 @@
       "state": "New York"
     },
     "buying_committee_summary": {
-      "committee_coverage_score": "66%",
+      "committee_coverage_score": "33%",
       "roles_found": [
-        "Technical Evaluator",
-        "Economic Buyer"
+        "Technical Evaluator"
       ],
       "roles_missing_gaps": [
-        "Champion"
+        "Champion",
+        "Economic Buyer"
       ],
       "status_risk": "HIGH RISK - MISSING ROLES"
     },
     "total_contacts_evaluated": 3,
     "contacts": [
       {
-        "apollo_id": "dd_01",
-        "name": "Rachel Stevens",
-        "title": "VP of Revenue Operations",
-        "icf_persona": "Economic Buyer",
-        "email": "r.green@datadoghq.com",
-        "sfdc_status": {
-          "exists_in_sfdc": false,
-          "sfdc_contact_id": null
-        }
-      },
-      {
-        "apollo_id": "dd_02",
-        "name": "Christopher Davis",
-        "title": "Director of Sales Operations",
+        "apollo_id": null,
+        "name": "",
+        "title": "VP of Sales Operations",
         "icf_persona": "General Stakeholder",
-        "email": "c.pratt@datadoghq.com",
+        "email": "r.stevens@datadoghq.com",
         "sfdc_status": {
           "exists_in_sfdc": false,
           "sfdc_contact_id": null
         }
       },
       {
-        "apollo_id": "dd_03",
-        "name": "Samuel Hayes",
-        "title": "Lead Salesforce Administrator",
+        "apollo_id": null,
+        "name": "",
+        "title": "Director of Sales Engineering",
         "icf_persona": "Technical Evaluator",
-        "email": "s.altman@datadoghq.com",
+        "email": "c.davis@datadoghq.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": null,
+        "name": "",
+        "title": "Senior Sales Development Rep",
+        "icf_persona": "General Stakeholder",
+        "email": "s.hayes@datadoghq.com",
         "sfdc_status": {
           "exists_in_sfdc": false,
           "sfdc_contact_id": null
@@ -248,8 +248,8 @@
     "buying_committee_summary": {
       "committee_coverage_score": "66%",
       "roles_found": [
-        "Economic Buyer",
-        "Champion"
+        "Champion",
+        "Economic Buyer"
       ],
       "roles_missing_gaps": [
         "Technical Evaluator"

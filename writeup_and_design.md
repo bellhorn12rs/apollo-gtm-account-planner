@@ -24,3 +24,14 @@ To scale this proof-of-concept for enterprise production:
 1. **OAuth 2.0 & Webhooks:** Transition from static API keys to OAuth 2.0 with event-driven webhooks triggered directly on Salesforce Account creation.
 2. **Asynchronous Batch Processing:** Implement Celery/Redis queueing for asynchronous bulk processing across large target account lists with rate-limit retries.
 3. **Bi-Directional CRM Ingestion:** Connect `crm_writeback_staging.json` to an integration tool (e.g., Workato, n8n, Salesforce REST API) to populate Opportunity Contact Roles (OCR) and trigger Apollo sequence enrollments automatically.
+
+## 5. Architectural Assumptions & AI Guardrails
+
+### Core Operational Assumptions
+* **Primary Key Identity:** Assumes exact-string email address matching is the source of truth for CRM deduplication across systems.
+* **Buying Committee Schema:** Assumes target accounts require three core personas for a qualified multi-threaded deal (Economic Buyer, Champion, Technical Evaluator).
+* **API Key Context:** Assumes production execution will run with an Enterprise Apollo API Key, replacing the local domain-specific fallback handler.
+
+### AI Trust vs. Deterministic Guardrails
+* **Where AI is Trusted (Dynamic Layer):** LLM capabilities (`SKILL.md`) are trusted to evaluate ambiguous job titles against MEDDPICC roles, generate strategic coverage summaries, and draft rep-facing next-best-action briefs.
+* **Where AI is Not Trusted (Deterministic Layer):** LLM outputs are explicitly restricted from executing CRM queries, performing email deduplication, calculating mathematical coverage percentages, or staging write-back payloads. Deterministic Python logic handles all API calls and data hygiene to eliminate hallucinations and prevent dirty data ingestion into Salesforce.
