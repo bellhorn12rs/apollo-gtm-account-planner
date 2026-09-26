@@ -1,0 +1,161 @@
+{
+  "total_net_new_staged": 13,
+  "net_new_contacts_for_sfdc_ingestion": [
+    {
+      "apollo_id": "str_03",
+      "name": "Sarah Jenkins",
+      "title": "VP of Revenue Operations",
+      "icf_persona": "Economic Buyer",
+      "email": "s.jenkins@stripe.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "stripe.com"
+    },
+    {
+      "apollo_id": "str_04",
+      "name": "Marcus Vance",
+      "title": "Director of Finance",
+      "icf_persona": "General Stakeholder",
+      "email": "m.vance@stripe.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "stripe.com"
+    },
+    {
+      "apollo_id": "str_05",
+      "name": "Elena Rostova",
+      "title": "Salesforce Lead Administrator",
+      "icf_persona": "Technical Evaluator",
+      "email": "e.rostova@stripe.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "stripe.com"
+    },
+    {
+      "apollo_id": "not_01",
+      "name": "Alex Rivera",
+      "title": "VP of RevOps & Commercial Tech",
+      "icf_persona": "Economic Buyer",
+      "email": "a.rivera@notion.so",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "notion.so"
+    },
+    {
+      "apollo_id": "not_02",
+      "name": "Priya Patel",
+      "title": "Director of GTM Systems",
+      "icf_persona": "Champion",
+      "email": "p.patel@notion.so",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "notion.so"
+    },
+    {
+      "apollo_id": "not_03",
+      "name": "Tom Harrison",
+      "title": "CRM Systems Architect",
+      "icf_persona": "Technical Evaluator",
+      "email": "t.harrison@notion.so",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "notion.so"
+    },
+    {
+      "apollo_id": "fig_01",
+      "name": "Jessica Taylor",
+      "title": "Head of BizTech & Enterprise Apps",
+      "icf_persona": "Champion",
+      "email": "j.taylor@figma.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "figma.com"
+    },
+    {
+      "apollo_id": "fig_02",
+      "name": "Brandon Lee",
+      "title": "Salesforce Engineer",
+      "icf_persona": "Technical Evaluator",
+      "email": "b.lee@figma.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "figma.com"
+    },
+    {
+      "apollo_id": "dd_01",
+      "name": "Rachel Stevens",
+      "title": "VP of Revenue Operations",
+      "icf_persona": "Economic Buyer",
+      "email": "r.green@datadoghq.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "datadoghq.com"
+    },
+    {
+      "apollo_id": "dd_02",
+      "name": "Christopher Davis",
+      "title": "Director of Sales Operations",
+      "icf_persona": "General Stakeholder",
+      "email": "c.pratt@datadoghq.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "datadoghq.com"
+    },
+    {
+      "apollo_id": "dd_03",
+      "name": "Samuel Hayes",
+      "title": "Lead Salesforce Administrator",
+      "icf_persona": "Technical Evaluator",
+      "email": "s.altman@datadoghq.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "datadoghq.com"
+    },
+    {
+      "apollo_id": "hs_01",
+      "name": "Laura Danforth",
+      "title": "Chief Revenue Officer",
+      "icf_persona": "Economic Buyer",
+      "email": "l.danforth@hubspot.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "hubspot.com"
+    },
+    {
+      "apollo_id": "hs_02",
+      "name": "Michael Stone",
+      "title": "Head of Sales Enablement & Systems",
+      "icf_persona": "Champion",
+      "email": "m.stone@hubspot.com",
+      "sfdc_status": {
+        "exists_in_sfdc": false,
+        "sfdc_contact_id": null
+      },
+      "target_domain": "hubspot.com"
+    }
+  ]
+}

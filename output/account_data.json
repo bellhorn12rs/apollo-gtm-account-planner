@@ -1,0 +1,285 @@
+[
+  {
+    "target_domain": "stripe.com",
+    "account_info": {
+      "name": "Stripe",
+      "estimated_num_employees": 8000,
+      "industry": "information technology & services",
+      "city": "South San Francisco",
+      "state": "California"
+    },
+    "buying_committee_summary": {
+      "committee_coverage_score": "100%",
+      "roles_found": [
+        "Technical Evaluator",
+        "Champion",
+        "Economic Buyer"
+      ],
+      "roles_missing_gaps": [],
+      "status_risk": "FULLY MAPPED"
+    },
+    "total_contacts_evaluated": 5,
+    "contacts": [
+      {
+        "apollo_id": "str_01",
+        "name": "Claire Hughes",
+        "title": "Head of Business Systems",
+        "icf_persona": "Champion",
+        "email": "c.hughes@stripe.com",
+        "sfdc_status": {
+          "exists_in_sfdc": true,
+          "sfdc_contact_id": "0038W000021A1bQ"
+        }
+      },
+      {
+        "apollo_id": "str_02",
+        "name": "David Chen",
+        "title": "Sr. Staff Engineer",
+        "icf_persona": "Technical Evaluator",
+        "email": "d.chen@stripe.com",
+        "sfdc_status": {
+          "exists_in_sfdc": true,
+          "sfdc_contact_id": "0038W000021A1bR"
+        }
+      },
+      {
+        "apollo_id": "str_03",
+        "name": "Sarah Jenkins",
+        "title": "VP of Revenue Operations",
+        "icf_persona": "Economic Buyer",
+        "email": "s.jenkins@stripe.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": "str_04",
+        "name": "Marcus Vance",
+        "title": "Director of Finance",
+        "icf_persona": "General Stakeholder",
+        "email": "m.vance@stripe.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": "str_05",
+        "name": "Elena Rostova",
+        "title": "Salesforce Lead Administrator",
+        "icf_persona": "Technical Evaluator",
+        "email": "e.rostova@stripe.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      }
+    ]
+  },
+  {
+    "target_domain": "notion.so",
+    "account_info": {
+      "name": "Notion",
+      "estimated_num_employees": 7700,
+      "industry": "information technology & services",
+      "city": "San Francisco",
+      "state": "California"
+    },
+    "buying_committee_summary": {
+      "committee_coverage_score": "100%",
+      "roles_found": [
+        "Technical Evaluator",
+        "Economic Buyer",
+        "Champion"
+      ],
+      "roles_missing_gaps": [],
+      "status_risk": "FULLY MAPPED"
+    },
+    "total_contacts_evaluated": 3,
+    "contacts": [
+      {
+        "apollo_id": "not_01",
+        "name": "Alex Rivera",
+        "title": "VP of RevOps & Commercial Tech",
+        "icf_persona": "Economic Buyer",
+        "email": "a.rivera@notion.so",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": "not_02",
+        "name": "Priya Patel",
+        "title": "Director of GTM Systems",
+        "icf_persona": "Champion",
+        "email": "p.patel@notion.so",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": "not_03",
+        "name": "Tom Harrison",
+        "title": "CRM Systems Architect",
+        "icf_persona": "Technical Evaluator",
+        "email": "t.harrison@notion.so",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      }
+    ]
+  },
+  {
+    "target_domain": "figma.com",
+    "account_info": {
+      "name": "Figma",
+      "estimated_num_employees": 1900,
+      "industry": "design",
+      "city": "San Francisco",
+      "state": "California"
+    },
+    "buying_committee_summary": {
+      "committee_coverage_score": "66%",
+      "roles_found": [
+        "Technical Evaluator",
+        "Champion"
+      ],
+      "roles_missing_gaps": [
+        "Economic Buyer"
+      ],
+      "status_risk": "HIGH RISK - MISSING ROLES"
+    },
+    "total_contacts_evaluated": 2,
+    "contacts": [
+      {
+        "apollo_id": "fig_01",
+        "name": "Jessica Taylor",
+        "title": "Head of BizTech & Enterprise Apps",
+        "icf_persona": "Champion",
+        "email": "j.taylor@figma.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": "fig_02",
+        "name": "Brandon Lee",
+        "title": "Salesforce Engineer",
+        "icf_persona": "Technical Evaluator",
+        "email": "b.lee@figma.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      }
+    ]
+  },
+  {
+    "target_domain": "datadoghq.com",
+    "account_info": {
+      "name": "Datadog",
+      "estimated_num_employees": 8100,
+      "industry": "information technology & services",
+      "city": "New York",
+      "state": "New York"
+    },
+    "buying_committee_summary": {
+      "committee_coverage_score": "66%",
+      "roles_found": [
+        "Technical Evaluator",
+        "Economic Buyer"
+      ],
+      "roles_missing_gaps": [
+        "Champion"
+      ],
+      "status_risk": "HIGH RISK - MISSING ROLES"
+    },
+    "total_contacts_evaluated": 3,
+    "contacts": [
+      {
+        "apollo_id": "dd_01",
+        "name": "Rachel Stevens",
+        "title": "VP of Revenue Operations",
+        "icf_persona": "Economic Buyer",
+        "email": "r.green@datadoghq.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": "dd_02",
+        "name": "Christopher Davis",
+        "title": "Director of Sales Operations",
+        "icf_persona": "General Stakeholder",
+        "email": "c.pratt@datadoghq.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": "dd_03",
+        "name": "Samuel Hayes",
+        "title": "Lead Salesforce Administrator",
+        "icf_persona": "Technical Evaluator",
+        "email": "s.altman@datadoghq.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      }
+    ]
+  },
+  {
+    "target_domain": "hubspot.com",
+    "account_info": {
+      "name": "HubSpot",
+      "estimated_num_employees": 9100,
+      "industry": "information technology & services",
+      "city": "Cambridge",
+      "state": "Massachusetts"
+    },
+    "buying_committee_summary": {
+      "committee_coverage_score": "66%",
+      "roles_found": [
+        "Economic Buyer",
+        "Champion"
+      ],
+      "roles_missing_gaps": [
+        "Technical Evaluator"
+      ],
+      "status_risk": "HIGH RISK - MISSING ROLES"
+    },
+    "total_contacts_evaluated": 2,
+    "contacts": [
+      {
+        "apollo_id": "hs_01",
+        "name": "Laura Danforth",
+        "title": "Chief Revenue Officer",
+        "icf_persona": "Economic Buyer",
+        "email": "l.danforth@hubspot.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      },
+      {
+        "apollo_id": "hs_02",
+        "name": "Michael Stone",
+        "title": "Head of Sales Enablement & Systems",
+        "icf_persona": "Champion",
+        "email": "m.stone@hubspot.com",
+        "sfdc_status": {
+          "exists_in_sfdc": false,
+          "sfdc_contact_id": null
+        }
+      }
+    ]
+  }
+]
