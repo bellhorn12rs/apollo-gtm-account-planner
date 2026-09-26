@@ -25,16 +25,10 @@ To scale this proof-of-concept for enterprise production:
 2. **Asynchronous Batch Processing:** Implement Celery/Redis queueing for asynchronous bulk processing across large target account lists with rate-limit retries.
 3. **Bi-Directional CRM Ingestion:** Connect `crm_writeback_staging.json` to an integration tool (e.g., Workato, n8n, Salesforce REST API) to populate Opportunity Contact Roles (OCR) and trigger Apollo sequence enrollments automatically.
 
-## 5. Architectural Assumptions & AI Guardrails
+### 5. Architectural Assumptions & AI Guardrails
 
-### Core Operational Assumptions
-* **Primary Key Identity:** Assumes exact-string email address matching is the source of truth for CRM deduplication across systems.
-* **Buying Committee Schema:** Assumes target accounts require three core personas for a qualified multi-threaded deal (Economic Buyer, Champion, Technical Evaluator).
-* **API Key Context:** Assumes production execution will run with an Enterprise Apollo API Key, replacing the local domain-specific fallback handler.
-
-### AI Trust vs. Deterministic Guardrails
-* **Where AI is Trusted (Dynamic Layer):** LLM capabilities (`SKILL.md`) are trusted to evaluate ambiguous job titles against MEDDPICC roles, generate strategic coverage summaries, and draft rep-facing next-best-action briefs.
-* **Where AI is Not Trusted (Deterministic Layer):** LLM outputs are explicitly restricted from executing CRM queries, performing email deduplication, calculating mathematical coverage percentages, or staging write-back payloads. Deterministic Python logic handles all API calls and data hygiene to eliminate hallucinations and prevent dirty data ingestion into Salesforce.
-
-* **Data Structure for Reliable Reasoning:** Standardized outputs into a flat, bounded JSON schema (`account_data.json`) with strict enumerated persona tags and coverage percentages. This guarantees the LLM reasoning layer (`SKILL.md`) receives structured inputs rather than unformatted free text.
-* **Intentional Scope Exclusions:** Excluded direct CRM mutation writes (relying on staging instead), multi-page API pagination, and intent signal ingestion to keep execution under 10 seconds and maintain strict human-in-the-loop validation boundaries.
+* **Core Operational Assumptions:** Assumes exact-string email matching as the primary key for CRM deduplication, and that target accounts require three core personas (Economic Buyer, Champion, Technical Evaluator) for a de-risked multi-threaded opportunity. Assumes production execution will utilize an Enterprise Apollo API Key.
+* **Why Not a Direct MCP Call?:** Bypassing the backend script via direct Agent-to-Apollo MCP calls would expose raw, unvalidated API responses directly to the LLM. Running deterministic Python code first creates a necessary hygiene and classification gate before AI reasoning occurs.
+* **Where AI is Trusted vs. Not Trusted:** LLM capabilities (`SKILL.md`) are trusted to evaluate job titles against MEDDPICC roles and draft rep-facing action briefs. LLM outputs are explicitly restricted from executing API calls, performing email deduplication, calculating coverage percentages, or staging write-back payloads.
+* **Data Structure for Reliable Reasoning:** Standardized outputs into a flat, bounded JSON schema (`account_data.json`) with strict enumerated persona tags and coverage percentages so the reasoning layer never parses unformatted free text.
+* **Intentional Scope Exclusions:** Excluded direct CRM mutation writes (relying on staging instead), multi-page API pagination, and intent signal ingestion to maintain execution speed under 10 seconds and preserve strict human-in-the-loop validation boundaries.
