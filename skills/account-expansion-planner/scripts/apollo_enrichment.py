@@ -25,9 +25,9 @@ DOMAIN_MOCK_DATABASE = {
         {"id": "fig_02", "first_name": "Brandon", "last_name": "Lee", "title": "Salesforce Engineer", "email": "b.lee@figma.com"}
     ],
     "datadoghq.com": [
-    {"apollo_id": "dd_01", "name": "Rachel Stevens", "title": "VP of Sales Operations", "email": "r.stevens@datadoghq.com", "icf_persona": "Economic Buyer"},
-    {"apollo_id": "dd_02", "name": "Christopher Davis", "title": "Director of Sales Engineering", "email": "c.davis@datadoghq.com", "icf_persona": "Technical Evaluator"},
-    {"apollo_id": "dd_03", "name": "Samuel Hayes", "title": "Senior Sales Development Rep", "email": "s.hayes@datadoghq.com", "icf_persona": "User/SDR"}
+        {"id": "dd_01", "first_name": "Rachel", "last_name": "Stevens", "title": "VP of Revenue Operations", "email": "r.stevens@datadoghq.com"},
+        {"id": "dd_02", "first_name": "Christopher", "last_name": "Davis", "title": "Director of Sales Operations", "email": "c.davis@datadoghq.com"},
+        {"id": "dd_03", "first_name": "Samuel", "last_name": "Hayes", "title": "Lead Salesforce Administrator", "email": "s.hayes@datadoghq.com"}
     ],
     "hubspot.com": [
         {"id": "hs_01", "first_name": "Laura", "last_name": "Danforth", "title": "Chief Revenue Officer", "email": "l.danforth@hubspot.com"},

@@ -98,10 +98,10 @@
       "target_domain": "figma.com"
     },
     {
-      "apollo_id": null,
-      "name": "",
-      "title": "VP of Sales Operations",
-      "icf_persona": "General Stakeholder",
+      "apollo_id": "dd_01",
+      "name": "Rachel Stevens",
+      "title": "VP of Revenue Operations",
+      "icf_persona": "Economic Buyer",
       "email": "r.stevens@datadoghq.com",
       "sfdc_status": {
         "exists_in_sfdc": false,
@@ -110,10 +110,10 @@
       "target_domain": "datadoghq.com"
     },
     {
-      "apollo_id": null,
-      "name": "",
-      "title": "Director of Sales Engineering",
-      "icf_persona": "Technical Evaluator",
+      "apollo_id": "dd_02",
+      "name": "Christopher Davis",
+      "title": "Director of Sales Operations",
+      "icf_persona": "General Stakeholder",
       "email": "c.davis@datadoghq.com",
       "sfdc_status": {
         "exists_in_sfdc": false,
@@ -122,10 +122,10 @@
       "target_domain": "datadoghq.com"
     },
     {
-      "apollo_id": null,
-      "name": "",
-      "title": "Senior Sales Development Rep",
-      "icf_persona": "General Stakeholder",
+      "apollo_id": "dd_03",
+      "name": "Samuel Hayes",
+      "title": "Lead Salesforce Administrator",
+      "icf_persona": "Technical Evaluator",
       "email": "s.hayes@datadoghq.com",
       "sfdc_status": {
         "exists_in_sfdc": false,

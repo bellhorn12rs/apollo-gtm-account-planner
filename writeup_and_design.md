@@ -35,3 +35,6 @@ To scale this proof-of-concept for enterprise production:
 ### AI Trust vs. Deterministic Guardrails
 * **Where AI is Trusted (Dynamic Layer):** LLM capabilities (`SKILL.md`) are trusted to evaluate ambiguous job titles against MEDDPICC roles, generate strategic coverage summaries, and draft rep-facing next-best-action briefs.
 * **Where AI is Not Trusted (Deterministic Layer):** LLM outputs are explicitly restricted from executing CRM queries, performing email deduplication, calculating mathematical coverage percentages, or staging write-back payloads. Deterministic Python logic handles all API calls and data hygiene to eliminate hallucinations and prevent dirty data ingestion into Salesforce.
+
+* **Data Structure for Reliable Reasoning:** Standardized outputs into a flat, bounded JSON schema (`account_data.json`) with strict enumerated persona tags and coverage percentages. This guarantees the LLM reasoning layer (`SKILL.md`) receives structured inputs rather than unformatted free text.
+* **Intentional Scope Exclusions:** Excluded direct CRM mutation writes (relying on staging instead), multi-page API pagination, and intent signal ingestion to keep execution under 10 seconds and maintain strict human-in-the-loop validation boundaries.
